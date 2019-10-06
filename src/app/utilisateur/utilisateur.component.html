@@ -1,0 +1,36 @@
+<div class="container">
+
+  <h2>Information de l'utilisateur</h2>
+
+  <!--Formulaire de connexion-->
+  <form #login_user="ngForm" (ngSubmit)="OnClick_utilisateur(login_user.value)">
+    <div class="form-row">
+      <div class="form-group col-md-8">
+        <input type="text" class="form-control" name="email" placeholder="Votre e-mail" ngModel>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-8">
+        <input type="password" class="form-control" name="motDePasse" placeholder="Votre mot de passe" ngModel>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" [disabled]="!login_user.form.valid">Envoyer</button>
+    </div>
+  </form>
+
+
+  <!--Information de l'utilisateur-->
+  <div *ngIf="utilisateur">
+    <table>
+      <tr><td><img src="http://forum.reseaudentreprise.com/{{utilisateur.Avatar}}"></td></tr>
+      <tr><td><h2>{{utilisateur.Pseudo}}</h2></td></tr>
+      <tr><td><p>{{utilisateur.Email}}</p></td></tr>
+      <tr><td><p>{{utilisateur.Acces}}</p></td></tr>
+      <tr><td><p>{{utilisateur.Statut}}</p></td></tr>
+    </table>
+  </div>
+   
+</div>

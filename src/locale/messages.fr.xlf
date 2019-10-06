@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      
+      <trans-unit id="cd0659c9b70ec9e1771588db7655a3535a0cda94" datatype="html">
+        <source>Under Construction !</source>
+        <target>Page en construction !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/traduction/traduction.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      
+      <trans-unit id="21f1a5791bc750e2b27ed419003e0c855bb86dd0" datatype="html">
+        <source>This page is under construction, thank you for coming back later.</source>
+        <target>Cette page est en construction, merci de revenir plus tard.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/traduction/traduction.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      
+      <trans-unit id="3fda991d3149e9ab4d57151bd0e8666fb517f66b" datatype="html">
+        <source>More details  &apos;https://alligator.io/angular/internationalization&apos;</source>
+        <target>Plus de détails  &apos;https://alligator.io/angular/internationalization&apos;</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/traduction/traduction.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      
+    </body>
+  </file>
+</xliff>

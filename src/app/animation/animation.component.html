@@ -1,0 +1,23 @@
+<div>
+  <!--Train en mouvement-->
+  <button (click)="Smile_animate()">Appeler le train</button>
+
+  <div [@animationTrain]="state">
+    <img src="assets/images/train.png" width="1920" height="300">
+  </div>
+</div>
+
+
+<div>
+  <!--Liste item-->
+  <button (click)="Ajouter_item()">Ajouter un item</button>
+  <button (click)="Effacer_item()">Effacer un item</button>
+
+  <div>
+    <ul>
+      <li *ngFor="let list of liste_item" [@animationListe]>
+        {{list}}
+      </li>
+    </ul>
+  </div>
+</div>
